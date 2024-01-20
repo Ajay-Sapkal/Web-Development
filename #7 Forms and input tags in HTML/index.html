@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how to make Forms">
+    <title>Make a Form</title>
+</head>
+<body>
+    <h1>Learn Forms</h1>
+
+    <form action="/submit" method="post">
+
+        <!-- Usernmae and password -->
+        <div>
+            <label for="username">Enter your username : </label>
+            <input type="text" id="username" name="username" placeholder="Enter username" required>
+        </div>
+        <div>
+            <label for="password">Enter your password : </label>
+            <input type="password" id="password" name="password" placeholder="Enter password" required>
+        </div>
+
+        <!-- Select gender using radion type -->
+        <div>
+            <label>gender : </label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+
+        <!-- Select options -->
+        <div>
+            <label for="Year">Year : </label>
+            <select name="Year" id="Year">
+                <option value="1">First Year</option>
+                <option value="2">Second Year</option>
+                <option value="3">Third Year</option>
+                <option value="4">Fourth Year</option>
+            </select>
+                
+        </div>
+
+        <!-- Comment box -->
+        <div>
+            <label for="comment">Enter your comment</label>
+            <br>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        </div>
+
+        <!-- Checkbox -->
+        <div>
+            <input type="checkbox" id="box" name="checkbox" value="yes">
+            <label for="box">Checkbox</label>
+        </div>
+
+        <!-- button, color and date-->
+        <div>
+            <input type="button" id="button" name="button" value="button">
+            <br>
+            <label for="color">Select color</label>
+            <input type="color" id="color" name="color">
+            <br>
+            <label for="date">Select date</label>
+            <input type="date" id="date" name="date" value="23">
+            <br>
+
+            <label for="number">select number</label>
+            <input type="week" id="number" >
+
+            
+
+        </div>
+        
+        <!-- Reset and Submit -->
+        <div>
+            <input type="reset" name="reset" value="reset">
+            <input type="submit" name="submit" value="submit">
+        </div>
+        <br>
+        <div>
+            <label for="me">Label</label>
+            <input type="image" src="submit.png" id="me" height="20">
+        </div>
+
+    </form>
+    <br>
+    <div>
+        <h3>List of input types : </h3>
+        <img src="List of input types.png" alt="input types" height="700">
+    </div>
+    
+</body>
+</html>
