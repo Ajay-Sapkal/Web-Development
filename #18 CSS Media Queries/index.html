@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Queries</title>
+    <style>
+        body {
+            background-color: rgb(196, 143, 143);
+        }
+        
+        @media screen and (orientation : landscape){
+            .box {
+                border: 1px solid black;
+                border-radius: 15px;
+            }
+            
+        }
+        @media only screen and (max-width: 455px){
+            body {
+
+                background-color: rgb(79, 79, 201);
+
+                .boxes {
+                 flex-direction: column;
+                }
+            }
+        }
+    
+        .boxes {
+            display: flex;
+        }
+        .box {
+            width : 200px;
+            height: 200px;
+            background-color: steelblue;
+            padding: 3px;
+            margin: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Lorem, ipsum dolor.
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

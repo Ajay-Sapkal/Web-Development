@@ -12,23 +12,26 @@
         :root {
             --color : rgb(60, 60, 188);
             --seccolor : rgb(224, 193, 102);
+            --acolor : rgb(55, 198, 58);
+            --dark : black;
         }
         .nav {
-            background-color: rgba(108, 193, 124, 0.827);
-        }
-        .container{
-            background-color: var(--seccolor);
+            background-color: var(--color);
         }
         ul {
             display: flex;
         }
-        ul li {
-            padding: 20px;
-            list-style: none;
-        }
         ul li:first-child {
-            --color : rgb(231, 54, 125);
+            --color : rgb(232, 83, 142);
             background-color: var(--color);
+        }
+        ul li {
+            list-style: none;
+            padding: 25px;
+            border: 2px solid var(--dark);
+        }
+        .container{
+            background-color: aqua;
         }
     </style>
 </head>

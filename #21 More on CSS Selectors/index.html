@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        *{
+            background-color: rgba(180, 171, 171, 0.723);
+        }
+        .boxes *{
+            border: 2px solid black;
+            margin: 5px;
+        }
+        .box:nth-child(even){
+            background-color: rgba(255, 0, 0, 0.353);
+        }
+        [data-color = "cyan"] {
+            background-color: rgba(127, 255, 212, 0.523);
+        }
+        .boxes::before {
+            content: "content before boxes";
+        }
+        ::selection {
+            background-color: rgb(71, 146, 211);
+        }
+        .box::first-letter{
+            color: rgb(0, 13, 255);
+            font-size: 30px;
+        }
+        input::placeholder {
+            color: rgba(0, 0, 255, 0.749);
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="cyan" class="box">I am a box</div>
+        <div class="box">I am a box</div>
+        <div class="box">I am a box</div>
+        <div class="box">I am a box</div>
+        <input type="text" placeholder="Ente text here">
+    </div>
+</body>
+</html>
